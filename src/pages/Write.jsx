@@ -49,7 +49,7 @@ function Write() {
                     // userId: currentUser.id,
                 })
                 //no state; we are in the write/publish page
-                : await axios.post("http://localhost:5500/posts/", {
+                : await axios.post("/posts/", {
                     title,
                     desc: value,
                     postImg: imgUrl,
