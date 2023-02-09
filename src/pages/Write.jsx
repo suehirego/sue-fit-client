@@ -41,7 +41,7 @@ function Write() {
         try {
             //if there is a state; we are in the update page
             state
-                ? await axios.put(`/posts/${state.id}`, {
+                ? await axios.put(`https://sue-fit-blog.herokuapp.com/posts/${state.id}`, {
                     title,
                     desc: value,
                     postImg: file ? imgUrl : "",
@@ -49,7 +49,7 @@ function Write() {
                     // userId: currentUser.id,
                 })
                 //no state; we are in the write/publish page
-                : await axios.post("/posts/", {
+                : await axios.post("https://sue-fit-blog.herokuapp.com/posts/", {
                     title,
                     desc: value,
                     postImg: imgUrl,

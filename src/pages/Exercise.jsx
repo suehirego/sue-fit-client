@@ -16,7 +16,7 @@ function Exercise() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await axios.get("/posts/?cat=fitness");
+                const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=fitness");
                 setPosts(res.data);
             } catch (err) {
                 console.log(err);

@@ -14,7 +14,7 @@ function FitnessFeature() {
     useEffect(() => {
         const fetchFeature = async () => {
             try{
-                const res = await axios.get("/posts/?cat=feature");
+                const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=feature");
                 setFeatures(res.data);
             } catch(err){
                 console.log(err);

@@ -27,7 +27,7 @@ function SinglePage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get(`/posts/${postId}`);
+                const res = await axios.get(`https://sue-fit-blog.herokuapp.com/posts/${postId}`);
                 setPost(res.data);
             } catch (err) {
                 console.log(err);
@@ -39,7 +39,7 @@ function SinglePage() {
     //delete post
     const handleDelete = async () => {
         try {
-            await axios.delete(`/posts/${postId}`);
+            await axios.delete(`https://sue-fit-blog.herokuapp.com/posts/${postId}`);
             navigate("/")
         } catch (err) {
             console.log(err);

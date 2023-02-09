@@ -14,7 +14,7 @@ function MealsFeature() {
     useEffect(() => {
         const fetchFeature = async () => {
             try{
-                const res = await axios.get("/posts/?cat=mealsFeature");
+                const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=mealsFeature");
                 setFeatures(res.data);
             } catch(err){
                 console.log(err);

@@ -16,7 +16,7 @@ function Meals() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await axios.get("/posts/?cat=meals");
+                const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=meals");
                 setPosts(res.data);
             } catch (err) {
                 console.log(err);
