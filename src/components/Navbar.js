@@ -56,7 +56,7 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
-                        to="/exercise?cat=fitness"
+                        to="/exercise"
                         className={({ isActive }) =>
                            "nav-links" + (isActive ? " activated" : "")
                         }
@@ -67,7 +67,7 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
-                        to="/meals?cat=meals"
+                        to="/meals"
                         className={({ isActive }) =>
                            "nav-links" + (isActive ? " activated" : "")
                         }
