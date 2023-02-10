@@ -2,10 +2,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import axios from 'axios';
+import axios from 'axios';
 import video1 from '../assets/video1.mp4';
 import Menu from '../components/Menu';
-import { axiosInstance } from '../config';
+
 
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await axiosInstance.get("/posts/?cat=home");
+                const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=home");
                 setPosts(res.data);
             } catch (err) {
                 // console.log(err);
