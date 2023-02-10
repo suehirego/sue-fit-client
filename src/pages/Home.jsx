@@ -7,6 +7,7 @@ import video1 from '../assets/video1.mp4';
 import Menu from '../components/Menu';
 import { axiosInstance } from '../config';
 
+
 function Home() {
 
     const [posts, setPosts] = useState([]);
@@ -17,7 +18,7 @@ function Home() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await axiosInstance.get("posts/?cat=home");
+                const res = await axiosInstance.get("/posts/?cat=home");
                 setPosts(res.data);
             } catch (err) {
                 // console.log(err);
