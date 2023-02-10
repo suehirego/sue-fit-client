@@ -2,7 +2,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 import video1 from '../assets/video1.mp4';
 import Menu from '../components/Menu';
 import { axiosInstance } from '../config';
