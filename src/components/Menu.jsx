@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
+import { axiosInstance } from '../config';
 import { FaBookmark } from 'react-icons/fa';
 
 function Menu() {
@@ -12,7 +13,7 @@ function Menu() {
     useEffect(() => {
         const fetchPosts = async () => {
             try{
-                const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=advert");
+                const res = await axiosInstance.get("/posts/?cat=advert");
                 setPosts(res.data);
             } catch(err){
                 // console.log(err);
