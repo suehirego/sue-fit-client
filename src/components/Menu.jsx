@@ -15,7 +15,7 @@ function Menu() {
                 const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=advert");
                 setPosts(res.data);
             } catch(err){
-                console.log(err);
+                // console.log(err);
             }
         };
         fetchPosts();

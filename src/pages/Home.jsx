@@ -19,7 +19,7 @@ function Home() {
                 const res = await axios.get("https://sue-fit-blog.herokuapp.com/posts/?cat=home");
                 setPosts(res.data);
             } catch (err) {
-                console.log(err);
+                // console.log(err);
             }
         };
         fetchPosts();
