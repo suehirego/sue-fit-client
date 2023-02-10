@@ -17,7 +17,7 @@ function Home() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await axiosInstance.get("/posts/?cat=home");
+                const res = await axiosInstance.get("posts/?cat=home");
                 setPosts(res.data);
             } catch (err) {
                 // console.log(err);
