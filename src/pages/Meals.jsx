@@ -7,7 +7,6 @@ import MealsFeature from '../components/MealsFeature';
 
 
 function Meals() {
-
     const [posts, setPosts] = useState([]);
 
     //Images public URL
