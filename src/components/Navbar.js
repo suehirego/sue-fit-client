@@ -106,7 +106,7 @@ function Navbar() {
                   }
 
                   {currentUser ?
-                     <li className="nav-btn2"onClick={logout} >
+                     <li className="nav-btn2" onClick={logout} >
                         <NavLink
                            to="/"
                            className={({ isActive }) =>

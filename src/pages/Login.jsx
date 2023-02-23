@@ -27,7 +27,7 @@ function Login() {
             await login(inputs);
             navigate("/");
         } catch (err) {
-            setError(err.response.data);
+            setError(err);
         }
     };
 

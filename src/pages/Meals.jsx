@@ -33,8 +33,8 @@ function Meals() {
 
                 <div className="mealDetails">
                     <div className="heading">
-                        <span>FITNESS</span>
-                        <p>Workouts</p>
+                        <span>New in </span>
+                        <p>Meals</p>
                     </div>
                     <hr />
 
